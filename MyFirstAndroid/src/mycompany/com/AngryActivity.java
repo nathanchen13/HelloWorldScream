@@ -4,6 +4,7 @@
 package mycompany.com;
 
 import android.app.Activity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 
@@ -13,6 +14,7 @@ import android.view.View;
  */
 public class AngryActivity extends Activity {
 
+		MediaPlayer mediaPlayer;
 	 	@Override
 	    protected void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
@@ -20,14 +22,22 @@ public class AngryActivity extends Activity {
 	    }
 
 	    public void ns_angry(View view) {
+	    	mediaPlayer = MediaPlayer.create(this, R.raw.sound_file_1);
+	    	mediaPlayer.start();
 	    }
 
 	    public void robert_angry(View view) {
+	    	mediaPlayer = MediaPlayer.create(this, R.raw.sound_file_1);
+	    	mediaPlayer.start();
 	    }
 
 	    public void ryan_angry(View view) {
+	    	mediaPlayer = MediaPlayer.create(this, R.raw.sound_file_1);
+	    	mediaPlayer.start();
 	    }
 
 	    public void n_angry(View view) {
+	    	mediaPlayer = MediaPlayer.create(this, R.raw.sound_file_1);
+	    	mediaPlayer.start();
 	    }
 }
