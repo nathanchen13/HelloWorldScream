@@ -22,22 +22,22 @@ public class AngryActivity extends Activity {
 	    }
 
 	    public void ns_angry(View view) {
-	    	mediaPlayer = MediaPlayer.create(this, R.raw.sound_file_1);
+	    	mediaPlayer = MediaPlayer.create(this, R.raw.nathan_super_angry);
 	    	mediaPlayer.start();
 	    }
 
 	    public void robert_angry(View view) {
-	    	mediaPlayer = MediaPlayer.create(this, R.raw.sound_file_1);
+	    	mediaPlayer = MediaPlayer.create(this, R.raw.rob_angry);
 	    	mediaPlayer.start();
 	    }
 
 	    public void ryan_angry(View view) {
-	    	mediaPlayer = MediaPlayer.create(this, R.raw.sound_file_1);
+	    	mediaPlayer = MediaPlayer.create(this, R.raw.ryan_angry);
 	    	mediaPlayer.start();
 	    }
 
 	    public void n_angry(View view) {
-	    	mediaPlayer = MediaPlayer.create(this, R.raw.sound_file_1);
+	    	mediaPlayer = MediaPlayer.create(this, R.raw.nathan_c_angry);
 	    	mediaPlayer.start();
 	    }
 }
