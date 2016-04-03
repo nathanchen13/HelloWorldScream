@@ -75,11 +75,13 @@ public class MyActivity extends Activity {
         startActivity(angry_intent);
         finish();
     }
+    @Override
     public void onBackPressed(){
     	mp.reset();
     	mp.release();
     	finish();
     }
+    @Override
     public void onPause(){
     	super.onPause();
     	if(mp != null){

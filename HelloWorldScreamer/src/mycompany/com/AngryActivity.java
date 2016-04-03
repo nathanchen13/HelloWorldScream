@@ -44,7 +44,7 @@ public class AngryActivity extends Activity {
 	    	mediaPlayer = MediaPlayer.create(this, R.raw.nathan_c_angry);
 	    	mediaPlayer.start();
 	    }
-	    
+	    @Override
 	    public void onBackPressed(){
 //	    	backgroundMusic.reset();
 //	    	backgroundMusic.release();
@@ -55,6 +55,7 @@ public class AngryActivity extends Activity {
 	    	startActivity(goback);
 	    	finish();
 	    }
+	    @Override
 	    public void onStop(){
 	    	super.onStop();
 	    	backgroundMusic.reset();
