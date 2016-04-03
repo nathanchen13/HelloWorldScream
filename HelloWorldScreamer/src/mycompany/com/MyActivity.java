@@ -17,6 +17,7 @@ import android.widget.ToggleButton;
 public class MyActivity extends Activity {
 	
 	static boolean music = true;
+	static boolean angry_echo = false;
 	
 	MediaPlayer mp;
 	@Override
@@ -26,10 +27,12 @@ public class MyActivity extends Activity {
         mp = MediaPlayer.create(this, R.raw.space_music1);
         mp.start();
         music = true;
+        angry_echo = false;
         Button happy = (Button) findViewById(R.id.happy);
         Button angry = (Button) findViewById(R.id.angry);
         ToggleButton mswitch = (ToggleButton) findViewById(R.id.music_switch);
-        
+        ToggleButton aeswitch = (ToggleButton) findViewById(R.id.angry_echo_switch);
+        aeswitch.setChecked(false);
         happy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +58,16 @@ public class MyActivity extends Activity {
                 	if(mp.isPlaying()){
                 		mp.pause();;
                 	}
+                }
+            }
+        });
+        aeswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    angry_echo = true;
+
+                } else {
+                	angry_echo = false;
                 }
             }
         });

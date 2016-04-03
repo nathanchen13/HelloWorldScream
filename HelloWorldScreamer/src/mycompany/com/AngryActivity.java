@@ -26,22 +26,42 @@ public class AngryActivity extends Activity {
 	    }
 
 	    public void ns_angry(View view) {
-	    	mediaPlayer = MediaPlayer.create(this, R.raw.nathan_super_angry);
+	    	if(MyActivity.angry_echo == true){
+		    	mediaPlayer = MediaPlayer.create(this, R.raw.nathan_super_angry_echo);
+	    	}
+	    	else{
+		    	mediaPlayer = MediaPlayer.create(this, R.raw.nathan_super_angry);
+	    	}
 	    	mediaPlayer.start();
 	    }
 
 	    public void robert_angry(View view) {
-	    	mediaPlayer = MediaPlayer.create(this, R.raw.rob_angry);
+	    	if(MyActivity.angry_echo == true){
+		    	mediaPlayer = MediaPlayer.create(this, R.raw.rob_angry_echo);
+	    	}
+	    	else{
+		    	mediaPlayer = MediaPlayer.create(this, R.raw.rob_angry);
+	    	}
 	    	mediaPlayer.start();
 	    }
 
 	    public void ryan_angry(View view) {
-	    	mediaPlayer = MediaPlayer.create(this, R.raw.ryan_angry);
+	    	if(MyActivity.angry_echo == true){
+		    	mediaPlayer = MediaPlayer.create(this, R.raw.ryan_angry_echo);
+	    	}
+	    	else{
+		    	mediaPlayer = MediaPlayer.create(this, R.raw.ryan_angry);
+	    	}
 	    	mediaPlayer.start();
 	    }
 
 	    public void n_angry(View view) {
-	    	mediaPlayer = MediaPlayer.create(this, R.raw.nathan_c_angry);
+	    	if(MyActivity.angry_echo == true){
+		    	mediaPlayer = MediaPlayer.create(this, R.raw.nathan_c_angry_echo);
+	    	}
+	    	else{
+		    	mediaPlayer = MediaPlayer.create(this, R.raw.nathan_c_angry);
+	    	}
 	    	mediaPlayer.start();
 	    }
 	    @Override
